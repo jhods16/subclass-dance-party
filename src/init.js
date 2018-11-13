@@ -54,8 +54,29 @@ $(document).ready(function() {
       'align-items': 'center'
     });
 
-    $('.dancer').css('position', 'relative')
-    
+    $('.dancer').css('position', 'relative');
+  });
+
+  $('.groupUpButton').click(function() {
+    var lastDancer = $('.dancer').length - 1;
+    var firstDancer = $('.dancer')[0];
+    $('.dancer').each(function(i, element) {
+      if ($(element).hasClass('banana-dancer')) {
+        $(element).css({
+          'top': '50px',
+          'left': i * 100 + 'px'
+        });
+      }
+    });
+
+    $('.dancer').each(function(i, element) {
+      if ($(element).hasClass('pineapple-dancer')) {
+        $(element).css({
+          'top': '600px',
+          'left': i * 50 + 'px' 
+        });
+      }
+    });
   });
 });
 

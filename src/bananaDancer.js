@@ -10,7 +10,8 @@ makeBananaDancer.prototype.constructor = makeBananaDancer;
 
 makeBananaDancer.prototype.step = function() {
   this.oldStep();
-  
+  this.$node.slideUp();
+  this.$node.slideDown();
 };
 
 makeBananaDancer.prototype.setClassName = function() {

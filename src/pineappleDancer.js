@@ -10,4 +10,7 @@ makePineappleDancer.prototype.constructor = makePineappleDancer;
 
 makePineappleDancer.prototype.step = function() {
   this.oldStep();
+
+  this.$node.fadeOut();
+  this.$node.fadeIn();
 };

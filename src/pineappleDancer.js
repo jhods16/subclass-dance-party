@@ -1,8 +1,7 @@
-var makePineappleDancer = function(top, left, timeBetweenSteps) {
+var makePineappleDancer = function(top, left, timeBetweenSteps, className) {
   this.oldStep = MakeDancer.prototype.step;
-  MakeDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="dancer pineappleDancer"></span>');
-
+  this.className = 'pineapple-dancer';
+  MakeDancer.call(this, top, left, timeBetweenSteps, className);
 };
 
 makePineappleDancer.prototype = Object.create(MakeDancer.prototype);
@@ -11,5 +10,4 @@ makePineappleDancer.prototype.constructor = makePineappleDancer;
 
 makePineappleDancer.prototype.step = function() {
   this.oldStep();
-  this.$node.toggle();
 };

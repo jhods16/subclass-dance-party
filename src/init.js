@@ -19,27 +19,17 @@ $(document).ready(function() {
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
     var getDancerClass = $(this).attr('data-name');
-    // var lastDancer = $('.dancer').length - 1;
-
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $(".stage").height() * Math.random(),
-      $(".stage").width() * Math.random(),
+      $('.stage').height() * Math.random(),
+      $('.stage').width() * Math.random(),
       Math.random() * 1000, getDancerClass
       
     );
-
-    // var pineappleDancer = new makePineappleDancer(
-    //   $("body").height() * Math.random(),
-    //   $("body").width() * Math.random(),
-    //   Math.random() * 1000
-    // );
     
     $('.stage').append(dancer.$node);
-    // $('body').append(pineappleDancer.$node);
 
-    // $('.dancer['+ lastDancer +']').addClass('getDancerClass');
   });
   
 });
@@ -58,8 +48,6 @@ $(document).ready(function() {
   });
 
   $('.groupUpButton').click(function() {
-    var lastDancer = $('.dancer').length - 1;
-    var firstDancer = $('.dancer')[0];
     $('.dancer').each(function(i, element) {
       if ($(element).hasClass('banana-dancer')) {
         $(element).css({
@@ -76,6 +64,10 @@ $(document).ready(function() {
           'left': i * 50 + 'px' 
         });
       }
+    });
+
+    $('.dancer').each(function(i, element) {
+      console.log($(element));
     });
   });
 });

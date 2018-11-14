@@ -12,5 +12,4 @@ makePineappleDancer.prototype.step = function() {
 
   this.$node.fadeOut();
   this.$node.fadeIn();
-  this.$node.animate('width', '30px');
 };

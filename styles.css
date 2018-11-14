@@ -45,20 +45,26 @@ body{
 }
 
 
-body, a:link, a:visited, a:active{
+body{
   color: lightblue;
 }
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
 }
-.topbar{
-  height:32px;
-  background-color: #555;
-}
+
 .title{
   background-color: #777;
 }
+
+a, .btn-container{
+  background-color: #777;
+  height:32px;
+  font-family: 'Arial';
+  color: pink;
+    text-decoration: none;
+}
+
 .dancer{
   border-radius:10px;
   position:absolute;

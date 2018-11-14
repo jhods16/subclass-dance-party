@@ -48,6 +48,7 @@ body{
 body{
   color: lightblue;
 }
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
@@ -62,7 +63,7 @@ a, .btn-container{
   height:32px;
   font-family: 'Arial';
   color: pink;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .dancer{

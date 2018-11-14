@@ -5,7 +5,7 @@ describe('bananaDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    bananaDancer = new makeBananaDancer(10, 20, timeBetweenSteps);
+    bananaDancer = new makeBananaDancer(10, 20, timeBetweenSteps, 'banana-dancer');
   });
 
   it('should have a jQuery $node object', function() {
@@ -32,5 +32,9 @@ describe('bananaDancer', function() {
       clock.tick(timeBetweenSteps);
       expect(bananaDancer.step.callCount).to.be.equal(2);
     });
+    // it('should set the class for each dancer', function() {
+    //   sinon.spy(bananaDancer, 'setClass');
+    //   expect(bananaDancer.setPosition.called).to.be.true;
+    // });
   });
 });

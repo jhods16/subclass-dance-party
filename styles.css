@@ -49,17 +49,28 @@ body{
   color: lightblue;
 }
 
-.title, .addDancerButton{
+.title, .addButton, .lineUpButton, .groupUpButton{
   padding:5px 12px;
   float:right;
+  
+}
+
+.addButton, .lineUpButton, .groupUpButton{
+  margin-right: 5px;
+  border-radius:5px;
+}
+
+.addButton:hover, .lineUpButton:hover, .groupUpButton:hover {
+  color: purple;
 }
 
 .title{
-  background-color: #777;
+/*  background-color: #777;*/
+  font-weight: bold;
 }
 
 a, .btn-container{
-  background-color: #777;
+  background-color: black;
   height:32px;
   font-family: 'Arial';
   color: pink;

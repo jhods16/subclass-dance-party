@@ -65,10 +65,6 @@ $(document).ready(function() {
         });
       }
     });
-
-    $('.dancer').each(function(i, element) {
-      console.log($(element));
-    });
   });
 });
 

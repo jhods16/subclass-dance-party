@@ -27,7 +27,7 @@ $(document).ready(function() {
       Math.random() * 1000, getDancerClass
       
     );
-    
+
     $('.stage').append(dancer.$node);
 
   });
@@ -60,7 +60,7 @@ $(document).ready(function() {
     $('.dancer').each(function(i, element) {
       if ($(element).hasClass('pineapple-dancer')) {
         $(element).css({
-          'top': '600px',
+          'top': '400px',
           'left': i * 50 + 'px' 
         });
       }
